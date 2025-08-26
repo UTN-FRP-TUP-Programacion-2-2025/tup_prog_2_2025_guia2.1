@@ -28,67 +28,66 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnRegistrar = new System.Windows.Forms.Button();
-            this.lbxRegistros = new System.Windows.Forms.ListBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.tbImpresoRegistro = new System.Windows.Forms.TextBox();
-            this.SuspendLayout();
+            btnRegistrar = new Button();
+            lbxRegistros = new ListBox();
+            btnListar = new Button();
+            tbImpresoRegistro = new TextBox();
+            SuspendLayout();
             // 
             // btnRegistrar
             // 
-            this.btnRegistrar.Location = new System.Drawing.Point(391, 29);
-            this.btnRegistrar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnRegistrar.Name = "btnRegistrar";
-            this.btnRegistrar.Size = new System.Drawing.Size(168, 51);
-            this.btnRegistrar.TabIndex = 0;
-            this.btnRegistrar.Text = "Registrar";
-            this.btnRegistrar.UseVisualStyleBackColor = true;
-            this.btnRegistrar.Click += new System.EventHandler(this.button1_Click);
+            btnRegistrar.Location = new Point(391, 29);
+            btnRegistrar.Margin = new Padding(4, 5, 4, 5);
+            btnRegistrar.Name = "btnRegistrar";
+            btnRegistrar.Size = new Size(168, 51);
+            btnRegistrar.TabIndex = 0;
+            btnRegistrar.Text = "Registrar";
+            btnRegistrar.UseVisualStyleBackColor = true;
+            btnRegistrar.Click += btnRegistrar_Click;
             // 
             // lbxRegistros
             // 
-            this.lbxRegistros.FormattingEnabled = true;
-            this.lbxRegistros.ItemHeight = 20;
-            this.lbxRegistros.Location = new System.Drawing.Point(12, 127);
-            this.lbxRegistros.Name = "lbxRegistros";
-            this.lbxRegistros.Size = new System.Drawing.Size(372, 144);
-            this.lbxRegistros.TabIndex = 2;
+            lbxRegistros.FormattingEnabled = true;
+            lbxRegistros.Location = new Point(12, 127);
+            lbxRegistros.Name = "lbxRegistros";
+            lbxRegistros.Size = new Size(372, 144);
+            lbxRegistros.TabIndex = 2;
             // 
-            // button1
+            // btnListar
             // 
-            this.button1.Location = new System.Drawing.Point(391, 127);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(168, 51);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Listar Registros";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            btnListar.Location = new Point(391, 127);
+            btnListar.Margin = new Padding(4, 5, 4, 5);
+            btnListar.Name = "btnListar";
+            btnListar.Size = new Size(168, 51);
+            btnListar.TabIndex = 3;
+            btnListar.Text = "Listar Registros";
+            btnListar.UseVisualStyleBackColor = true;
+            btnListar.Click += btnListar_Click;
             // 
             // tbImpresoRegistro
             // 
-            this.tbImpresoRegistro.AllowDrop = true;
-            this.tbImpresoRegistro.Location = new System.Drawing.Point(12, 15);
-            this.tbImpresoRegistro.Multiline = true;
-            this.tbImpresoRegistro.Name = "tbImpresoRegistro";
-            this.tbImpresoRegistro.Size = new System.Drawing.Size(372, 94);
-            this.tbImpresoRegistro.TabIndex = 4;
+            tbImpresoRegistro.AllowDrop = true;
+            tbImpresoRegistro.Location = new Point(12, 15);
+            tbImpresoRegistro.Multiline = true;
+            tbImpresoRegistro.Name = "tbImpresoRegistro";
+            tbImpresoRegistro.Size = new Size(372, 94);
+            tbImpresoRegistro.TabIndex = 4;
             // 
             // FormPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(570, 286);
-            this.Controls.Add(this.tbImpresoRegistro);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.lbxRegistros);
-            this.Controls.Add(this.btnRegistrar);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "FormPrincipal";
-            this.Text = "Registro Vehicular";
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleDimensions = new SizeF(9F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(570, 286);
+            Controls.Add(tbImpresoRegistro);
+            Controls.Add(btnListar);
+            Controls.Add(lbxRegistros);
+            Controls.Add(btnRegistrar);
+            Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Margin = new Padding(4, 5, 4, 5);
+            Name = "FormPrincipal";
+            Text = "Registro Vehicular";
+            ResumeLayout(false);
+            PerformLayout();
 
         }
 
@@ -96,7 +95,7 @@
 
         private System.Windows.Forms.Button btnRegistrar;
         private System.Windows.Forms.ListBox lbxRegistros;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnListar;
         private System.Windows.Forms.TextBox tbImpresoRegistro;
     }
 }

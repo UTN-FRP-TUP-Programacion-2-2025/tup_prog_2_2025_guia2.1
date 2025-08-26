@@ -11,7 +11,7 @@ public partial class FormPrincipal : Form
         InitializeComponent();
     }
 
-    private void button1_Click(object sender, EventArgs e)
+    private void btnRegistrar_Click(object sender, EventArgs e)
     {
         Persona persona = new Persona(43402034,"Luisa");
         RegistroVehiculo reg=dpto.RegistrarVehiculo(persona);
@@ -19,7 +19,7 @@ public partial class FormPrincipal : Form
         tbImpresoRegistro.Text=reg.VerDetalle();
     }
 
-    private void button1_Click_1(object sender, EventArgs e)
+    private void btnListar_Click(object sender, EventArgs e)
     {
      
         lbxRegistros.Items.Clear();
